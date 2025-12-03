@@ -3,6 +3,7 @@ VS Code:
 - Python:Select Interpreter
 - Python 3.10.19 ('scikit-learn')
 
+**libraries**
 import numpy as np  
 import pandas as pd  
 import matplotlib.pyplot as plt  
