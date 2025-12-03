@@ -1,4 +1,4 @@
-VS Code:
+**VS Code:**
 - shift+cmd+P
 - Python:Select Interpreter
 - Python 3.10.19 ('scikit-learn')
