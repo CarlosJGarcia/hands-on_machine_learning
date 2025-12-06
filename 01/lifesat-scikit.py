@@ -6,9 +6,25 @@ import pandas as pd
 
 # Load the CSV data from file into a pandas.DataFrame
 file = 'data/lifesat.csv'
-lifesat = pd.read_csv(file)
+lifesat_df = pd.read_csv(file)
 
-print(lifesat)
+# Show the headers and the first 3 lines of the DataFrame
+print(lifesat_df.head(3))
+
+gdps = lifesat_df["GDP per capita (USD)"].tolist()
+satisfactions = lifesat_df["Life satisfaction"].tolist()
+
+n = 0
+for gdp in gdps:
+    print(f"{n} : {gdp}")
+    n += 1
+    if n > 3: break
+
+n = 0
+for satisfaction in satisfactions:
+    print(f"{n} : {satisfaction}")
+    n += 1
+    if n > 3: break
 
 
 """
